@@ -1,0 +1,49 @@
+<!-- <script>
+
+    class Car{
+        constructor(model, name){
+            this.name=name;
+            this.model=model
+
+        }
+
+        start(){
+            console.log("car name", this.name);
+        }
+    }
+
+    Benz= new Car("Subaru", "Subaru Impreza")
+    Benz.start()
+</script> -->
+
+
+
+<script>
+
+    class Car{
+        constructor(model, name){
+            this.name=name;
+            this.model=model
+
+        }
+
+        start(){
+            console.log("car name", this.name);
+        }
+    }
+
+
+    class electricCar extends Car{
+
+
+        start()
+        {
+
+            super.start()
+        }
+
+    }
+
+    Benz= new electricCar("Subaru", "Subaru Impreza")
+    Benz.start()
+</script>
