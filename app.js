@@ -1,6 +1,4 @@
 const appp = Vue.createApp({
-
-
     data() {
         return {
 
@@ -12,8 +10,10 @@ const appp = Vue.createApp({
         }
     },
 
-    methods: {
-        async getUserProfile() {
+    methods() {
+
+
+   getUserProfile = async() =>{
 const res = await fetch('https://randomuser.me/api/')
 
 const {results}= await res.json()
@@ -28,6 +28,9 @@ this.gender=results[0].gender
 console.log();
         } 
     }
+
+
+    // this.getUserProfile()
 })
 appp.mount('#app')
 
